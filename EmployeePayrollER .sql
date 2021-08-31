@@ -82,7 +82,7 @@ select SUM(salary) from employee join payroll on payroll.employee_id = employee.
 select AVG(salary) from employee join payroll on payroll.employee_id = employee.employee_id where gender = 'Female' group by gender;
 select gender, COUNT(salary) from employee join payroll on payroll.employee_id = employee.employee_id group by gender; 
 
-
+select employee.emp_name, department.department from employee join department on department.employee_id = employee.employee_id;
 
 
 
